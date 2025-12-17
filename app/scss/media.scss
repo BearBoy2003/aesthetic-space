@@ -25,23 +25,41 @@
 			margin: 20px 0 0 150px;
 		}
 	}
+
+	.footer {
+		&__btn {
+			margin-top: 20px;
+			margin-left: auto;
+		}
+	}
 }
 
 @media (max-width: 560px) {
-	.header {
-		&__logo {
-			img {
-				width: 250px;
-			}
-		}
+	.btn {
+		font-size: 18px;
+		padding: 18px 50px;
+	}
 
+	.logo {
+		img {
+			width: 250px;
+		}
+	}
+
+	.header {
 		&__btn {
 			margin-left: auto;
 		}
 	}
 
-	.btn {
-		font-size: 18px;
-		padding: 18px 50px;
+	.footer {
+		&__inner {
+			padding: 50px 10px 22px;
+		}
+
+		&__contacts-item {
+			flex-basis: 100%;
+			margin-bottom: 30px;
+		}
 	}
 }
