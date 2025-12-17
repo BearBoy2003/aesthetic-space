@@ -1,0 +1,12 @@
+/node_modules/
+/.idea/
+/package-lock.json
+
+app/css/
+app/fonts/*.woff
+app/fonts/*.woff2
+app/images/*.svg
+app/images/*.webp
+app/images/*.avif
+app/js/main.min.js
+app/index.html
