@@ -55,6 +55,19 @@ body {
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 0 10px;
+
+	@media (max-width: 1240px) {
+		max-width: 1000px;
+	}
+
+	@media (max-width: 1020px) {
+		max-width: 768px;
+	}
+
+	@media (max-width: 770px) {
+		max-width: 414px;
+	}
+
 }
 
 .btn {
@@ -124,6 +137,108 @@ body {
 
 	&__logo {
 		flex-basis: calc(50% + 10px);
+	}
+}
+
+.top {
+	margin-bottom: 50px;
+
+	&__inner {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 250px 500px;
+	}
+
+	&__about {
+		display: grid;
+		padding-top: 50px;
+		border-radius: 30px;
+		background-image: url('../images/top-aboutbg.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+		grid-column: 1 / 3;
+		grid-row: 1 / 3;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	&__info {
+		padding-top: 15px;
+		text-align: center;
+
+		&-title {
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__text {
+		max-width: 210px;
+		margin: 0 auto;
+	}
+
+	&__slogan {
+		padding-left: 20px;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 64px;
+		font-weight: 700;
+		max-width: 600px;
+		margin: 0 auto 30px;
+		padding-top: 5px;
+	}
+
+	&__images {
+		max-width: 100%;
+	}
+
+	&__promo {
+		align-self: self-end;
+		padding-top: 138px;
+		text-align: center;
+		color: #ffffff;
+		background-image: url('../images/promo-bg.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
+
+	&__promo-title {
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+
+	&__promo-text {
+		max-width: 175px;
+		margin: 0 auto 15px;
+
+		span {
+			display: block;
+		}
+	}
+
+	&__promo-img {
+		max-width: 100%;
+		margin-bottom: 15px;
+	}
+
+	&__promo-btn {
+		font-size: 20px;
+		font-weight: 700;
+		display: inline-block;
+		margin-bottom: 30px;
+		padding: 13px 37px;
+		text-transform: uppercase;
+		color: #ffffff;
+		border-radius: 30px;
+		background-color: #000000;
 	}
 }
 

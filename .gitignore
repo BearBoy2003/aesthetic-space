@@ -8,5 +8,6 @@ app/fonts/*.woff2
 app/images/*.svg
 app/images/*.webp
 app/images/*.avif
+app/images/*.png
 app/js/main.min.js
 app/index.html
